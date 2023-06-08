@@ -1,0 +1,69 @@
+.page-aside {
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 20px;
+   width: 270px;
+   overflow: hidden;
+   border-right: 2px solid rgb(79, 76, 78);
+   font-size: 16px;
+   text-align: center;
+   transition: all 0.3s ease 0s;
+ }
+ 
+ .aside-top {
+   height: 100px;
+   text-align: center;
+   border-bottom: 2px solid rgb(79, 76, 78);
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   gap: 10px;
+ }
+ 
+ .aside-content {
+   padding: 15px 0px;
+   border-bottom: 2px solid rgb(79, 76, 78);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+ }
+ 
+ .aside-icon {
+   width: 250px;
+ }
+ 
+ .aside-advertisement {
+   padding: 15px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 270px;
+   margin-bottom: 20px;
+ }
+ 
+ .aside-info {
+   padding: 15px 0px;
+ }
+ 
+ .aside-info h1 {
+  padding-bottom: 20px;
+
+   text-align: center;
+ }
+ 
+ .aside-info ul {
+   list-style: none;
+   text-align: start;
+ }
+ .aside-info ul li {
+  padding: 5px 0px;
+ }
+ @media (max-width: 800px) {
+   .page-aside {
+     display: none;
+   }
+ }
+ 

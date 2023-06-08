@@ -1,0 +1,7 @@
+.mainContent{
+    padding-top: 40px;
+    display: flex;
+
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}

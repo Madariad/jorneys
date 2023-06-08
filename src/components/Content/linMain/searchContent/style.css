@@ -1,0 +1,30 @@
+.searchContent{
+    width: 59%;
+    background-color: rgb(33 31 29);
+    border: 9px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.searchContent > div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.searchContent > ul {
+    list-style: none;
+    
+    padding-top: 20px;
+}
+
+.searchContent > ul li{
+    padding-top: 10px;
+}

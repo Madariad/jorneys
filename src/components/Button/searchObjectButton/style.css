@@ -1,0 +1,16 @@
+.searchObjectBtn{
+    width: 200px;
+    height: 50px;
+
+    border-radius: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(58, 78, 237);
+    border: 2px black solid;
+
+
+}

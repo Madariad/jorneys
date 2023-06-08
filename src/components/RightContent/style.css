@@ -1,0 +1,8 @@
+.RightContent{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
