@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "Geometria";
+    src: url("../../../../../../public/fonts/Geometria-Light.ttf") 
+  }
+
+.products {
+    padding: 1.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #0e0a07 !important;
+
+}
+
+.product-item {
+    position: relative;
+    display: flex;
+    padding: 0.75rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 191, 255, 0.4);
+    font-family: 'Geometria', 'Font Awesome 5 Free';
+}
+
+.products:last-child{
+    margin-bottom: 40px;
+}
+
+.products>div {
+    margin-bottom: 10px;
+}
+
+.products>div:last-child {
+    margin-bottom: 0;
+}
+
+.time {
+    font-size: 14px;
+    color: #202020;
+    align-items: center;
+    margin-top: 5px;
+    cursor: help;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time span {
+    font-weight: 500;
+}
+
+.time svg {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.btn-wrap {
+    padding: 0 2rem 1rem;
+    text-align: center;
+}
+
+.product-badge {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 11px;
+    padding: 2px 6px;
+    background: #ff4949;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    text-align: center;
+    color: #202020;
+}
+
+@media (max-width: 767.98px) {
+    .btn-wrap,
+    .object-info,
+    .products {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .products {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .products .alert {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.badge-danger {
+    background: #ff4949;
+    color: #fff;
+}
+
+.text-danger {
+    color: #ff4949;
+}
+
+.product-item {
+    position: relative;
+    display: flex;
+    padding: .75rem;
+}
+
+.product-item_default {
+    border-radius: .25rem;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.product-item_default .product-item__right {
+    align-items: center;
+}
+
+.product-item_default .product-item__left {
+    align-self: flex-start;
+}
+
+.product-item_purchased {
+    margin-bottom: 1rem;
+}
+
+.product-item_purchased:last-of-type {
+    margin-bottom: 0;
+}
+
+.product-item_purchased .product-item__body {
+    padding-left: 0;
+}
+
+.product-item_selected.product-item_default {
+    background: #f1f4f9;
+    border-color: #e8f3ff;
+}
+
+.product-item__left {
+    font-size: 0;
+}
+
+.product-item__icon {
+    margin-top: -3px;
+}
+
+.product-item__icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: currentColor;
+}
+
+.product-item__body {
+    line-height: 1.2;
+    flex-grow: 1;
+    padding-left: 1rem;
+    min-width: 0;
+}
+
+.product-item__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.product-item__price {
+    margin-top: .25rem;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+.checkbox-ios {
+    display: inline-block;    
+    height: 22px;    
+    line-height: 22px;    
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    user-select: none;	
+}
+.checkbox-ios .checkbox-ios-switch {
+    position: relative;	
+    display: inline-block;
+    box-sizing: border-box;			
+    width: 40px;	
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 25%/50%;	
+    vertical-align: top;
+    background: #eee;
+    transition: .2s;
+}
+.checkbox-ios .checkbox-ios-switch:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;	
+    display: inline-block;
+    width: 16px;	
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    transition: .15s;
+}
+.checkbox-ios input[type=checkbox] {
+    display: block;	
+    width: 0;
+    height: 0;	
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox-ios input[type=checkbox]:not(:disabled):active + .checkbox-ios-switch:before {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+}
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
+    background: limegreen;
+}
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
+    transform:translateX(18px);
+}
+
+/* Hover */
+.checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, .3);
+}
+
+/* Disabled */
+.checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch {
+    filter: grayscale(70%);
+    border-color: rgba(0, 0, 0, .1);
+}
+.checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch:before {
+    background: #eee;
+}
+
+/* Focus */
+.checkbox-ios.focused .checkbox-ios-switch:before {
+    box-shadow: inset 0px 0px 4px #ff5623;
+}
+
+.custom-control.custom-checkbox {
+    width: auto;
+    height: auto;
+    padding-left: 0;
+}
+.custom-control.custom-checkbox .custom-control-label::before,
+.custom-control.custom-checkbox .custom-control-label::after {
+        display: none;	
+}
+.custom-control.custom-checkbox .custom-control-label.text-danger {
+    margin-left: 5px;
+    line-height: 22px;
+}
+
+
+.sl_button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 00;
+    color: #0e0a07;
+    background: #98d0e1;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: 0s linear;
+    margin-left: -4px;
+}
+
+.sl_button:hover {
+    color: #0e0a07;
+    background: #cbe9f1;
+    cursor: help;
+}
+
+
+
+.product-item__desc {
+    margin-top: 0.375rem;
+    font-size: 14px;
+    color: #202020;
+    line-height: 1.125rem;
+}

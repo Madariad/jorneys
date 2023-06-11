@@ -10,7 +10,7 @@ html, body, div, span, h1, h2, h3, p, a, img, ul, li, form, label, aside, footer
     border: 0px;
     font: inherit;
     vertical-align: baseline;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
 }
 
 body {
