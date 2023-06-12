@@ -14,41 +14,19 @@ function SearchObject() {
 
   const navigate = useNavigate()
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const token = 'c8e53ee1-6729-4af1-99b8-056d70169c75';
-        const response = await axios.post(
-          `https://cors-anywhere.herokuapp.com/https://reestr-api.ru/?adress=${encodeURIComponent(searchInput)}&token=${token}`
-        );
-        const options = response.data.list || [];
-        dispatch(setDatalistOptions(options));
-        console.log(response);
-      } catch (error) {
-        console.error(error);
-        // Обработка ошибки здесь
-      }
-    };
-
-    fetchData();
-  }, [dispatch, searchInput]);
-
-
-
-
-
   // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
   //       const token = 'c8e53ee1-6729-4af1-99b8-056d70169c75';
-  //       const response = await axios.get(
-  //         `https://reestr-api.ru&adress=${searchInput}&token=${token}`
+  //       const response = await axios.post(
+  //         `https://cors-anywhere.herokuapp.com/https://reestr-api.ru/?adress=${encodeURIComponent(searchInput)}&token=${token}`
   //       );
-  //       const options = response.data?.list || []; // Handle undefined or empty response
+  //       const options = response.data.list || [];
   //       dispatch(setDatalistOptions(options));
+  //       console.log(response);
   //     } catch (error) {
   //       console.error(error);
-  //       // Handle the error here
+  //       // Обработка ошибки здесь
   //     }
   //   };
 
@@ -59,11 +37,34 @@ function SearchObject() {
 
 
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const token = '9e52bf75c6418af1dcbfb8d2ce80ebbb';
+        const response = await axios.get(
+          `https://cors-anywhere.herokuapp.com/https://api-cloud.ru/api/rosreestr.php?type=cadastr&adress=${searchInput}&token=${token}`
+        );
+        const options = response.data?.result || [];
+        console.log(response); // Handle undefined or empty response
+        dispatch(setDatalistOptions(options));
+      } catch (error) {
+        console.error(error);
+        // Handle the error here
+      }
+    };
+
+    fetchData();
+  }, [dispatch, searchInput]);
+
+
+
+
+
 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const auth_token = 'c8e53ee1-6729-4af1-99b8-056d70169c75';
+    const auth_token = '8345258c-284a-492f-857f-1cf88337bce4';
     const url = `https://cors-anywhere.herokuapp.com/https://reestr-api.ru/v1/search/address?auth_token=${auth_token}`;
 
     const datas = new URLSearchParams({ address: searchInput });

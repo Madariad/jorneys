@@ -12,6 +12,7 @@ const inputSearchSlice = createSlice({
     },
     setDatalistOptions: (state, action) => {
       state.datalistOptions = action.payload;
+      console.log(state.datalistOptions);
     },
   },
 });
