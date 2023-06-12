@@ -1,7 +1,4 @@
-/* .page-wrapper {
-    min-height: 100vh;
-    position: relative;
-  } */
+
   
   .footer {
     display: flex;
@@ -14,6 +11,7 @@
     font-size: 14px;
     font-weight: 700;
     border-top: 2px solid rgb(79, 76, 78);
+    margin-top: 50px;
   }
   
   .footer > p {

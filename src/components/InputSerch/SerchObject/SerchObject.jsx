@@ -21,9 +21,9 @@ function SearchObject() {
         const response = await axios.post(
           `https://cors-anywhere.herokuapp.com/https://reestr-api.ru/?adress=${encodeURIComponent(searchInput)}&token=${token}`
         );
-        const options = response.data?.list || [];
+        const options = response.data.list || [];
         dispatch(setDatalistOptions(options));
-        console.log(response.data);
+        console.log(response);
       } catch (error) {
         console.error(error);
         // Обработка ошибки здесь

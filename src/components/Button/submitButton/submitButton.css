@@ -1,0 +1,12 @@
+.submitButton{
+    width: 200px;
+    height: 40px;
+
+    background-color: #49ca1c;
+
+    border-radius: 50px;
+
+    color: wheat;
+
+    font-size: 20px;
+}
